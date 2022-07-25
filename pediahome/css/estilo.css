@@ -1,0 +1,1022 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+header {
+  display: flex;
+}
+#btn-menu {
+  display: none;
+}
+header label {
+  display: none;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+}
+label:hover {
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.barra-responsive {
+  width: 100%;
+  height: 100px;
+  background: #fff;
+  display: none;
+}
+
+.contenedor-header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../imagenes/principal.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+.nav img {
+  width: 200px;
+  padding: 0;
+  margin: -90px 0 0 0;
+  float: left;
+}
+
+.nav {
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  padding: 30px 50px 35px 0;
+  background-color: #fff;
+  box-shadow: 1px 1px 20px rgb(85, 85, 85);
+  position: fixed;
+  z-index: 100;
+}
+
+.nav-texto {
+  color: #8f0982;
+  font-weight: 300;
+  margin: 30px;
+  width: 100px;
+  font-size: 22px;
+}
+.nav-texto:hover {
+  opacity: 0.3;
+}
+
+.contenedor-intro {
+  width: 100%;
+  height: 700px;
+}
+
+.titulo {
+  width: 300px;
+  font-size: 40px;
+  color: #7a4091;
+  text-align: center;
+  padding-top: 100px;
+  margin: auto;
+  z-index: 100;
+  border-bottom: 20px solid #60e9e7;
+  border-bottom-left-radius: 10px 10px;
+  border-bottom-right-radius: 10px 10px;
+}
+.intro {
+  padding-top: 60px;
+  color: #0d0d0d;
+  text-align: center;
+  font-size: 24px;
+  line-height: 1.21;
+  margin: auto;
+  width: 805px;
+  height: 118px;
+}
+.intro-img {
+  padding-top: 120px;
+  display: flex;
+  margin: auto;
+}
+.nino-intro{
+  width: 100px;
+  height: 100px;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  background-color: #f5f5f5;
+  background-size: 100% 100%;
+  background-position: center;
+  transition: all 1s ease-in-out;
+  background-image: url(../imagenes/carruselhorizontala.jpg);
+  animation: banner 30s infinite linear;
+  box-shadow: 1px 0 20px rgb(155, 147, 147);
+}
+.banner-content {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@keyframes banner {
+  0% {
+    background-image: url(../imagenes/1.jpg);
+  }
+  16% {
+    background-image: url(../imagenes/1.jpg);
+  }
+  17% {
+    background-image: url(../imagenes/2.jpg);
+  }
+  33% {
+    background-image: url(../imagenes/2.jpg);
+  }
+  34% {
+    background-image: url(../imagenes/3.jpg);
+  }
+  49% {
+    background-image: url(../imagenes/3.jpg);
+  }
+  50% {
+    background-image: url(../imagenes/4.jpg);
+  }
+  66% {
+    background-image: url(../imagenes/4.jpg);
+  }
+  67% {
+    background-image: url(../imagenes/5.jpg);
+  }
+  84% {
+    background-image: url(../imagenes/5.jpg);
+  }
+  85% {
+    background-image: url(../imagenes/6.jpg);
+  }
+  100% {
+    background-image: url(../imagenes/6.jpg);
+  }
+}
+
+.servicios {
+  margin-top: 100px;
+  width: 100%;
+  height: 400px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.img-logo {
+  width: 80%;
+  height: 35%;
+  margin: 100px 0 0 20px;
+}
+
+.img-logo:hover {
+  opacity: 0.5;
+}
+
+.contenedor-slider {
+  width: 100%;
+  height: 500px;
+  margin: auto;
+  display: flex;
+
+}
+
+.slider-manual {
+  width: 1000px;
+  height: 300px;
+  margin: auto;
+  position: relative;
+  list-style: none;
+  padding: 0;
+  justify-content: center;
+  align-items: flex-end;
+  display: flex;
+}
+.slider-manual img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 97%;
+  height: 90%;
+  opacity: 0;
+  transition: all 0.5s;
+}
+.slider-manual input[type="radio"] {
+  display: none;
+}
+.slider-manual input[type="radio"]:checked ~ img {
+  opacity: 1;
+}
+.slider-manual input[type="radio"] + label {
+  position: relative;
+  z-index: 50;
+  margin: 10px;
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 1px solid #000;
+}
+.slider-manual input[type="radio"]:checked ~ label {
+  border: 1px solid #000;
+  background: rgb(82, 84, 211);
+}
+
+.mapa {
+  width: 100%;
+  height: 50vh;
+  border: 2px solid #a4a4a4;
+  display: flex;
+}
+.mapa img {
+  width: 50%;
+  height: 500px;
+  position: absolute;
+}
+.mapa-m {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+footer {
+  background: #d1f3f2;
+  height: 440px;
+  width: 100%;
+}
+
+.contenedor-footer {
+  width: 100%;
+  height: 440px;
+  display: flex;
+}
+.img-footer {
+  width: 33%;
+  height: 440px;
+  padding: 0 200px 0 100px;
+}
+.img-footer img {
+  width: 130px;
+}
+.img-footer img:nth-child(1) {
+  width: 80px;
+  height: 220px;
+  margin-bottom: 40px;
+}
+
+.foo-nav {
+  width: 20%;
+  height: 440px;
+  text-align: left;
+  padding-top: 60px;
+}
+.foo-nav a {
+  line-height: 50px;
+  color: #8f0982;
+  font-weight: 400;
+}
+.foo-nav a:hover {
+  opacity: 0.8;
+}
+.foo-info {
+  width: 50%;
+  height: 440px;
+  margin-left: 100px;
+}
+.foo-info h4 {
+  margin: 30px 0 0 20px;
+}
+.foo-info- {
+  width: 500px;
+  height: 210px;
+  margin-top: 30px;
+  border: 6px dashed #fff;
+  border-radius: 5%;
+  line-height: 30px;
+}
+
+.foo-info > .niños {
+  margin-top: 9px;
+  width: 500px;
+}
+.icono {
+  width: 40px;
+  transform: translateY(10px);
+}
+.icono:hover {
+  opacity: 0.5;
+}
+
+.over {
+  color: #f5f5f5;
+  margin-bottom: -30px;
+}
+.over:hover {
+  color: #8a8686;
+}
+
+.titulo-final h4 {
+  color: #f5f5f5;
+  text-align: center;
+  background: #000;
+}
+/*estilos de paginas info-pedia*/
+
+.contenedor-header-info-pedia {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../imagenes/pediaicono.jpg);
+  background-size: cover;
+  position: relative;
+}
+.img-info-pedia {
+  width: 600px;
+  height: 400px;
+  float: right;
+}
+.img-info-pedia img {
+  width: 600px;
+}
+
+.contenedor-info-pedia h2 {
+  width: 700px;
+  border-bottom: 20px solid #60e9e7;
+  border-bottom-left-radius: 10px 10px;
+  border-bottom-right-radius: 10px 10px;
+  color: #aa0f9b;
+  font-size: 30px;
+  margin: 40px 0 60px 80px;
+  padding-bottom: 10px;
+}
+.contenedor-info-pedia h2:nth-child(1) {
+  width: 600px;
+}
+.contenedor-info-pedia p {
+  line-height: 25px;
+  text-align: left;
+  margin: 20px 700px 40px 80px;
+}
+/*pagina hosp-pediah*/
+.contenedor-header-hos {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../imagenes/mihospitalencasa.jpg);
+  background-size: 100% 100%;
+  position: relative;
+}
+
+.contenedor-hos-pedia {
+  width: 100%;
+  height: 1400px;
+}
+.contenedor-hos-pedia h2 {
+  width: 600px;
+  border-bottom: 20px solid #60e9e7;
+  border-bottom-left-radius: 10px 10px;
+  border-bottom-right-radius: 10px 10px;
+  color: #aa0f9b;
+  font-size: 30px;
+  margin: 40px 0 60px 80px;
+  padding-bottom: 10px;
+}
+.contenedor-hos-pedia h2:nth-child(3) {
+  width: 200px;
+}
+.contenedor-hos-pedia p {
+  width: 80%;
+  line-height: 25px;
+  text-align: left;
+  margin-left: 70px;
+  margin-bottom: 5px;
+}
+.cont-hos-img {
+  width: 270px;
+ justify-content: center;
+}
+/*pagina iternacion*/
+.contenedor-header-internacion {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../imagenes/internaciondom.jpg);
+  background-size: 100% 100%;
+  position: relative;
+}
+.contenedor-info-internacion {
+  width: 100%;
+  height: 1400px;
+}
+.contenedor-info-internacion h2 {
+  width: 500px;
+  border-bottom: 20px solid #60e9e7;
+  border-bottom-left-radius: 10px 10px;
+  border-bottom-right-radius: 10px 10px;
+  color: #aa0f9b;
+  font-size: 30px;
+  margin: 40px 0 60px 80px;
+  padding-bottom: 10px;
+}
+.contenedor-info-internacion p {
+  line-height: 25px;
+  text-align: left;
+  margin: 20px 200px 40px 80px;
+}
+.contenedor-info-internacion li {
+  line-height: 25px;
+  text-align: left;
+  margin: 0 200px 0 80px;
+}
+.img-internacion {
+  width: 500px;
+  height: 500px;
+  float: right;
+  margin: -300px 400px 0 0;
+}
+.img-internacion img {
+  width: 700px;
+}
+/*pagina telemedicina*/
+
+.contenedor-header-telemedicina {
+  width: 100%;
+  height: 90vh;
+  background-image: url(../imagenes/telemedicina.jpg);
+  background-size: cover;
+  position: relative;
+}
+.contenedor-telemedicina {
+  width: 100%;
+  height: 1000px;
+}
+.contenedor-telemedicina h2 {
+  width: 300px;
+  border-bottom: 20px solid #60e9e7;
+  border-bottom-left-radius: 10px 10px;
+  border-bottom-right-radius: 10px 10px;
+  color: #aa0f9b;
+  font-size: 30px;
+  margin: 40px 0 60px 80px;
+  padding-bottom: 10px;
+}
+.contenedor-telemedicina p {
+  line-height: 25px;
+  text-align: left;
+  margin: 20px 200px 40px 80px;
+}
+/* pagina noticias*/
+.contenedor-header-noticias {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../imagenes/noticias.png);
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+.contenedor-noticias {
+  width: 100%;
+  height: 1000px;
+}
+.contenedor-noticias h2 {
+  width: 200px;
+  text-align: center;
+  margin: 40px 0 20px 20px;
+  color: #fff;
+  background: #00a893;
+  border-radius: 35px 0px 35px 0px;
+  -moz-border-radius: 35px 0px 35px 0px;
+  -webkit-border-radius: 35px 0px 35px 0px;
+  padding: 10px 20px 10px 20px;
+}
+.contenedor-noticias p {
+  line-height: 25px;
+  text-align: left;
+  margin: 0px 20px 10px 300px;
+}
+.img-noticias {
+  width: 200px;
+  height: 200px;
+  margin: -200px 0 0 20px;
+}
+@media screen and (max-width: 900px) {
+  header {
+    background-position: center;
+  }
+  .contenedor-header,
+  .contenedor-header-info-pedia,
+  .contenedor-header-hos,
+  .contenedor-header-internacion,
+  .contenedor-header-telemedicina,
+  .contenedor-header-noticias {
+    background-attachment: local;
+    background-size: cover;
+    height: 70vh;
+    width: 100%;
+    margin: auto;
+  }
+  header label {
+    display: flex;
+    z-index: 300;
+    margin: 10px 0 0 10px;
+    position: absolute;
+  }
+  .nav {
+    background: #fff;
+    position: static;
+    width: 100%;
+    height: 70px;
+    opacity: 1;
+    transition: all 0.8s;
+    margin-top: -1000px;
+  }
+  .nav img {
+    display: none;
+  }
+  .nav-texto {
+    font-size: 15px;
+    margin: 0 15px 0 0;
+    width: 50px;
+    height: 20px;
+    color: #8f0982;
+    opacity: 0.5;
+    border-right: 1px solid #000;
+    padding-right: 1px;
+  }
+  .nav-texto:hover {
+    opacity: 1;
+  }
+  #btn-menu:checked ~ .nav {
+    margin: 0;
+    transition: all 0.8s;
+  }
+  .titulo {
+    border-bottom: 15px solid #60e9e7;
+  }
+  .contenedor-intro {
+    width: 100%;
+    height: 600px;
+  }
+  .contenedor-intro p {
+    width: 70%;
+  }
+  .banner {
+    width: 100%;
+    height: 70vh;
+    margin: auto;
+  }
+  .servicios {
+   height: 600px;
+    margin:0;
+  }
+
+  .contenedor-slider {
+    height: 200px;
+  }
+  .slider-manual {
+    width: 100%;
+    height: 200px;
+  }
+  .slider-manual input[type="radio"] + label {
+    width: 10px;
+    height: 10px;
+  }
+
+  footer {
+    height: 450px;
+  }
+  .foo-info- {
+    width: 100%;
+    height: 220px;
+  }
+  .info-face {
+    margin: 0;
+  }
+
+  .foo-info > .niños {
+    margin-top: 65px;
+    width: 100%;
+  }
+  /* pagina info pedia*/
+  .img-info-pedia {
+    width: 300px;
+    height: 200px;
+  }
+  .img-info-pedia img {
+    width: 300px;
+  }
+  .contenedor-info-pedia h2 {
+    border-bottom: 15px solid #60e9e7;
+    font-size: 25px;
+    margin: 40px 0 60px 20px;
+  }
+  .contenedor-info-pedia h2:nth-child(1) {
+    width: 300px;
+  }
+  .contenedor-info-pedia h2:nth-child(3) {
+    width: 400px;
+  }
+  .contenedor-info-pedia p {
+    line-height: 25px;
+    text-align: left;
+    margin: 20px 200px 40px 20px;
+  }
+  /*pagina hospital en casa*/
+  .contenedor-hos-pedia {
+    width: 100%;
+    height: 1400px;
+  }
+  .contenedor-hos-pedia h2 {
+    width: 450px;
+    font-size: 25px;
+  }
+  .contenedor-hos-pedia h2:nth-child(3) {
+    width: 150px;
+  }
+  .cont-hos-img {
+    width: 400px;
+  }
+  .cont-hos-img img {
+    width: 400px;
+  }
+  
+  /*pagina info internacion*/
+  .contenedor-info-internacion {
+    width: 100%;
+    height: 1400px;
+  }
+  .contenedor-info-internacion h2 {
+    width: 400px;
+    font-size: 25px;
+    margin: 40px 0 60px 80px;
+  }
+  .contenedor-info-internacion p {
+    line-height: 20px;
+    margin: 20px 50px 40px 40px;
+  }
+  .contenedor-info-internacion li {
+    line-height: 20px;
+    margin: 0 50px 0 40px;
+  }
+  .img-internacion {
+    width: 300px;
+    height: 300px;
+    margin: 0 250px 0 0;
+  }
+  .img-internacion img {
+    width: 300px;
+  }
+  /*pagina telemedicina*/
+  .contenedor-telemedicina h2 {
+    width: 200px;
+    font-size: 25px;
+    margin: 40px 0 40px 80px;
+  }
+  .contenedor-telemedicina p {
+    line-height: 25px;
+    margin: 20px 200px 40px 80px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .nav {
+    padding: 15px 0 0 30px;
+    height: 50px;
+  }
+  .nav-texto {
+    margin: 0;
+    padding: 1px;
+    font-size: 10px;
+  }
+  .titulo {
+    width: 200px;
+    border-bottom: 10px solid #60e9e7;
+  }
+  .contenedor-intro {
+    height: 300px;
+  }
+  .titulo {
+    padding: 10px 0 0 0;
+    font-size: 20px;
+  }
+  .intro {
+    padding: 0;
+    font-size: 12px;
+  }
+  .intro-img {
+    padding: 0;
+    width: 70px;
+  }
+  .banner {
+    width: 100%;
+    height: 35vh;
+  }
+  .servicios {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    }
+  .img-logo{
+    width: 60%;
+    height: 30%;
+  }
+  .contenedor-slider {
+    width: 100%;
+  }
+  footer {
+    height: 340px;
+  }
+  .contenedor-footer {
+    width: 100%;
+    height: 340px;
+    display: flex;
+  }
+  .img-footer {
+    width: 70px;
+    height: 70px;
+    padding: 0;
+  }
+  .img-footer img {
+    width: 70px;
+  }
+  .img-footer img:nth-child(1) {
+    width: 50px;
+    height: 100px;
+    margin-bottom: 40px;
+  }
+  .foo-nav {
+    margin-left: 20px;
+    width: 50px;
+    text-align: left;
+    height: 320px;
+  }
+  .foo-nav a {
+    line-height: 50px;
+    color: #8f0982;
+    font-size: 10px;
+  }
+  .foo-nav a:hover {
+    opacity: 0.8;
+  }
+  .foo-info {
+    width: 50%;
+    height: 330px;
+    margin-left: 50px;
+  }
+  .foo-info h4 {
+    margin: 30px 0 0 20px;
+  }
+  .foo-info- {
+    display: flex;
+    font-size: 10px;
+    width: 230px;
+    height: 170px;
+    margin-top: 30px;
+    border: 6px dashed #fff;
+    border-radius: 5%;
+    line-height: 30px;
+  }
+  .foo-info > .niños {
+    margin-top: 20px;
+    width: 200px;
+  }
+  .icono {
+    width: 20px;
+    transform: translateY(10px);
+  }
+  .titulo-final h4 {
+    font-size: 10px;
+  }
+  /* pagina info pedia*/
+  .img-info-pedia {
+    width: 200px;
+    height: 100px;
+  }
+  .img-info-pedia img {
+    width: 200px;
+  }
+  .contenedor-info-pedia h2 {
+    border-bottom: 15px solid #60e9e7;
+    font-size: 20px;
+    margin: 40px 0 60px 20px;
+  }
+  .contenedor-info-pedia h2:nth-child(1) {
+    width: 200px;
+  }
+  .contenedor-info-pedia h2:nth-child(3) {
+    width: 300px;
+  }
+  .contenedor-info-pedia p {
+    font-size: 15px;
+    line-height: 20px;
+    text-align: left;
+    margin: 20px 50px 20px 20px;
+  }
+  /*pagina hospital en casa*/
+  .contenedor-hos-pedia {
+    width: 100%;
+    height: 1100px;
+  }
+  .contenedor-hos-pedia h2 {
+    margin: 40px 0 20px 20px;
+    width: 250px;
+    border-bottom: 10px solid #60e9e7;
+    font-size: 20px;
+  }
+  .contenedor-hos-pedia h2:nth-child(3) {
+    width: 110px;
+  }
+  .cont-hos-img img {
+    width: 300px;
+  }
+  .contenedor-hos-pedia p {
+    font-size: 10px;
+    line-height: 20px;
+  }
+  /*pagina info internacion*/
+  .contenedor-info-internacion {
+    width: 100%;
+    height: 1100px;
+  }
+  .contenedor-info-internacion h2 {
+    width: 300px;
+    font-size: 20px;
+    margin: 40px 0 40px 40px;
+    border-bottom: 13px solid #60e9e7;
+  }
+  .contenedor-info-internacion p {
+    font-size: 10px;
+    line-height: 15px;
+    margin: 20px 50px 40px 40px;
+  }
+  .contenedor-info-internacion li {
+    font-size: 10px;
+    line-height: 15px;
+    margin: 0 50px 0 40px;
+  }
+  .img-internacion {
+    width: 200px;
+    height: 200px;
+    margin: 0 100px 0 0;
+  }
+  .img-internacion img {
+    width: 200px;
+  }
+  /*pagina telemedicina*/
+  .contenedor-telemedicina h2 {
+    width: 150px;
+    font-size: 20px;
+    border-bottom: 10px solid #60e9e7;
+    margin: 20px 0 20px 60px;
+  }
+  .contenedor-telemedicina p {
+    font-size: 12px;
+    line-height: 20px;
+    margin: 40px 50px 0 40px;
+  }
+  /* pagina noticias*/
+  .contenedor-noticias h2 {
+    font-size: 15px;
+    width: 170px;
+    margin: 40px 0 20px 20px;
+  }
+  .contenedor-noticias p {
+    font-size: 12px;
+    line-height: 20px;
+    margin: 10px 20px 30px 30px;
+  }
+  .img-noticias {
+    margin: auto;
+  }
+}
+@media screen and (max-width: 375px) {
+  .banner {
+    width: 100%;
+    height: 27vh;
+  }
+  .contenedor-slider {
+    height: 200px;
+    margin: 0;
+    width: 100%;
+  }
+  .servicios {
+    grid-template-columns: repeat(2, 1fr);
+    }
+  .slider-manual {
+    width: 100%;
+    height: 150px;
+  }
+  .foo-info > .niños {
+    margin-top: 35px;
+    width: 190px;
+  }
+  .foo-info- {
+    margin-left: -50px;
+    width: 180px;
+  }
+  .foo-info > .niños {
+    margin-top: 60px;
+    width: 120px;
+  }
+  /* pagina info pedia*/
+  .img-info-pedia {
+    margin-right: 60px;
+    margin-bottom: 20px;
+  }
+  .img-info-pedia img {
+    width: 170px;
+  }
+  .contenedor-info-pedia h2 {
+    border-bottom: 15px solid #60e9e7;
+    font-size: 20px;
+    margin: 40px 0 60px 20px;
+  }
+  .contenedor-info-pedia h2:nth-child(1) {
+    width: 200px;
+  }
+  .contenedor-info-pedia h2:nth-child(3) {
+    width: 250px;
+  }
+  .contenedor-info-pedia p {
+    font-size: 15px;
+    line-height: 20px;
+    text-align: left;
+    margin: 20px 50px 20px 20px;
+  }
+  /*pagina hospital en casa*/
+
+  .contenedor-hos-pedia h2 {
+    width: 250px;
+    font-size: 15px;
+  }
+  .contenedor-hos-pedia h2:nth-child(3) {
+    width: 110px;
+  }
+  .cont-hos-img {
+    width: 200px;
+    height: 200px;
+  }
+  .cont-hos-img img {
+    width: 200px;
+  }
+  /*pagina hospital en casa*/
+  .contenedor-hos-pedia {
+    width: 100%;
+    height: 1100px;
+  }
+  .contenedor-hos-pedia h2 {
+    margin: 40px 0 20px 20px;
+    width: 250px;
+    border-bottom: 10px solid #60e9e7;
+    font-size: 20px;
+  }
+  .contenedor-hos-pedia h2:nth-child(3) {
+    width: 110px;
+  }
+  .cont-hos-img img {
+    width: 300px;
+  }
+  .contenedor-hos-pedia p {
+    font-size: 10px;
+    line-height: 20px;
+  }
+  /*pagina info internacion*/
+  .contenedor-info-internacion {
+    height: 1150px;
+  }
+  .contenedor-info-internacion h2 {
+    width: 250px;
+    font-size: 16px;
+    margin: 40px 0 40px 40px;
+    border-bottom: 10px solid #60e9e7;
+  }
+
+  .img-internacion {
+    width: 150px;
+    height: 150px;
+    margin: 0 100px 0 0;
+  }
+  .img-internacion img {
+    width: 150px;
+  }
+  /* pagina noticias*/
+  .contenedor-noticias h2 {
+    width: 200px;
+    margin: 40px 0 20px 20px;
+  }
+  .contenedor-noticias p {
+    line-height: 20px;
+    margin: 10px 20px 30px 30px;
+  }
+  .img-noticias {
+    margin: auto;
+  }
+}
